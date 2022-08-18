@@ -1,0 +1,3 @@
+[submodule "nvim-old"]
+	path = nvim-old
+	url = https://github.com/omargtdev/nvim
