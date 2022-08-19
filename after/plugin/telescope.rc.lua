@@ -88,13 +88,13 @@ local builtin = require("telescope.builtin")
 
 -- Maps
 vim.keymap.set('n', '<leader>n', ':Telescope file_browser<CR>')
-vim.keymap.set('n', 'tf', function ()
+vim.keymap.set('n', '<leader>tf', function ()
 	builtin.find_files({
 		no_ignore = false, -- Not respect .gitignore files to show
 		--hidden = true -- Show hidden files (e.g. .gitignore)
 	})
 end)
-vim.keymap.set('n', 'tg', ':Telescope live_grep<CR>')
-vim.keymap.set('n', 'tb', ':Telescope buffers<CR>')
-vim.keymap.set('n', 'td', ':Telescope diagnostics<CR>')
-vim.keymap.set('n', 'tr', ':Telescope resume<CR>')
+vim.keymap.set('n', '<leader>tg', ':Telescope live_grep<CR>')
+vim.keymap.set('n', '<leader>tb', ':Telescope buffers<CR>')
+vim.keymap.set('n', '<leader>td', ':Telescope diagnostics<CR>')
+vim.keymap.set('n', '<leader>tr', ':Telescope resume<CR>')

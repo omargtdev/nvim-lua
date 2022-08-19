@@ -39,7 +39,7 @@ return require('packer').startup(function(use)
   'nvim-lualine/lualine.nvim',
 	}
 	-- Buffers
-	use {'akinsho/bufferline.nvim', tag = "v2.*"}
+	--use {'akinsho/bufferline.nvim', tag = "v2.*"}
 
 	-- Telescope
 	use {
@@ -70,5 +70,8 @@ return require('packer').startup(function(use)
 
 	-- Terminal
 	use {"akinsho/toggleterm.nvim", tag = 'v2.*'	}
+
+	-- Harpoon, move in files with marks
+	use 'ThePrimeagen/harpoon'
 
 end)
