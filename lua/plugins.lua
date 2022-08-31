@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
 
 	-- Themes
 	use 'ellisonleao/gruvbox.nvim'
+	use 'navarasu/onedark.nvim'
 
 	-- Icons
 	use 'kyazdani42/nvim-web-devicons'
