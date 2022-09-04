@@ -65,7 +65,10 @@ return require('packer').startup(function(use)
 
 	-- LSP
 	use 'neovim/nvim-lspconfig'
-	use 'williamboman/nvim-lsp-installer'
+	use {
+		'williamboman/mason.nvim',
+    "williamboman/mason-lspconfig.nvim"
+	}
 	use 'RRethy/vim-illuminate' -- show highlight of objects better
 	use  'ray-x/lsp_signature.nvim' -- show info about objects
 
@@ -74,5 +77,14 @@ return require('packer').startup(function(use)
 
 	-- Harpoon, move in files with marks
 	use 'ThePrimeagen/harpoon'
+
+	-- SQL Client
+	use {
+		'kristijanhusak/vim-dadbod-ui',
+		requires = {
+			'tpope/vim-dadbod',
+			'tpope/vim-dotenv'
+		}
+	}
 
 end)
