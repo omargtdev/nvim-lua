@@ -14,7 +14,7 @@ o.cursorline = true
 
 o.textwidth = 120
 o.encoding = 'utf-8'
-o.clipboard = 'unnamed'
+o.clipboard = 'unnamedplus'
 
 
 o.hlsearch = false

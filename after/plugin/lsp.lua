@@ -98,7 +98,7 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 -----------------------------------------------------------------------------------------------
 
 -- Servers 
-local servers = { "tsserver", "jsonls", "sumneko_lua", "pyright" }
+local servers = { "tsserver", "jsonls", "sumneko_lua", "pyright", "clangd" }
 
 -- Set options to servers
 for _, server in pairs(servers) do
